@@ -1,0 +1,13 @@
+{
+  "tests": [
+    {
+      "name": "Unknown path returns 404",
+      "method": "POST",
+      "path": "/",
+      "body": {},
+      "expectedStatus": 404,
+      "expectedBody": {"error": "string"},
+      "bodyMatcher": "partial"
+    }
+  ]
+}
