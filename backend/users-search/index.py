@@ -13,7 +13,7 @@ CORS_HEADERS = {
 
 
 def get_conn():
-    return psycopg2.connect(os.environ["DATABASE_URL"])
+    return psycopg2.connect(os.environ["DATABASE_URL"], options="-c search_path=t_p26039289_sevens_color_chat_ap")
 
 
 def handler(event: dict, context) -> dict:
